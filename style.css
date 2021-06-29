@@ -46,6 +46,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #27394e;
+}
+
 /* Nav section with Hero */
 
 .main-head {
@@ -118,7 +122,7 @@ nav ul {
 }
 
 .locations-head h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 1rem 0rem;
   text-decoration: underline;
   text-decoration-thickness: 0.5rem;
@@ -138,14 +142,26 @@ nav ul {
   top: 0%;
   right: 0%;
 }
-/*
+
 .moving-cloud-1 {
+  opacity: 0.9;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
-*/
+
 .moving-cloud-2 {
   top: 20%;
   z-index: -1;
   opacity: 0.6;
+  animation: cloudAnimation 5s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
 }
 
 /* The media query */
@@ -158,5 +174,18 @@ nav ul {
   }
   #Logo {
     padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 0.9);
+    -webkit-text-fill-color: white;
   }
 }
