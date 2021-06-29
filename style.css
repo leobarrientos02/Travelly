@@ -8,8 +8,8 @@
 html {
   font-size: 62.5%;
 }
-body{
-  font-family: "Poppins",sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -31,13 +31,13 @@ h3 {
 }
 h4,
 h5 {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 a {
   color: white;
   text-decoration: none;
 }
-button{
+button {
   padding: 2rem 6rem;
   background: #4c6e97;
   border: none;
@@ -51,6 +51,9 @@ button{
 .main-head {
   background-color: #131c27;
   color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 nav {
   display: flex;
@@ -71,13 +74,14 @@ nav ul {
 }
 #Logo {
   flex: 2 1 40rem;
-  font-family: "Pattaya",sans-serif;
+  font-family: "Pattaya", sans-serif;
   font-weight: 400;
 }
 
-.hero{
+.hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0,0,0,0.5),transparent),url('./img/landing-page.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("./img/landing-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,18 +92,71 @@ nav ul {
   align-items: center;
   text-align: center;
 }
-.hero h3{
+.hero h3 {
   padding: 5rem;
 }
 
-@media  screen and (max-width:932px) {
-  html{
+/* The location sections */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+  /*Testing margin width
+  background: lightblue;
+  */
+}
+
+.locations-head h2 {
+  font-size: 3rem;
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.locations-head h3 {
+  font-size: 2rem;
+  padding: 4rem 0rem;
+  background: linear-gradient(#131c27, #663b34);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Clouds */
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+/*
+.moving-cloud-1 {
+}
+*/
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* The media query */
+@media screen and (max-width: 932px) {
+  html {
     font-size: 45%;
   }
-  nav{
+  nav {
     text-align: center;
   }
-  #Logo{
+  #Logo {
     padding: 2rem;
   }
 }
