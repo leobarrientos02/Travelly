@@ -331,8 +331,10 @@ button:focus {
     z-index: -2;
   }
   .locations-head h3 {
+    padding: 4rem;
+    width: 50%;
     background: rgba(19, 28, 39, 0.9);
-    -webkit-text-fll-color: white;
+    -webkit-text-fill-color: white;
   }
   .form-wrapper {
     width: 100%;
