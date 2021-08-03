@@ -282,6 +282,11 @@ footer ul {
   justify-content: space-around;
   align-items: center;
 }
+#github {
+  object-fit: cover;
+  width: 4rem;
+  height: 4rem;
+}
 
 /*Button Focus */
 button:focus {
@@ -291,7 +296,7 @@ button:focus {
 
 /*Error */
 .error {
-  display: ;
+  display: flex;
   text-align: center;
   justify-content: center;
   margin: auto;
